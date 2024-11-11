@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html class="wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Loterias365</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="page-header header-transparent" id="home">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-transparent" data-sm-stick-up-offset="1px" data-md-stick-up-offset="1px" data-lg-stick-up-offset="1px" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true">
+            <div class="rd-navbar-outer outer-transparent">
+              <div class="rd-navbar-inner">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-cell rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav"><span class="toggle-icon"></span></button>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="./"><img src="images/logo-103x43.png" width="77" height="58" alt=""></a>
+                </div>
+                <!-- RD Navbar Nav-->
+                <div class="rd-navbar-cell rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#advantages">Advantages</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="https://wa.link/864ttq">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="bg8">
+          <div class="parallax-content">
+            <div class="jumbotron-custom center context-dark">
+              <div class="container flex-container">
+                
+                <!-- Container do lado esquerdo -->
+                <div class="left-content">
+                  <h1 class="titleTypewriter">Apostar na <br />
+                    Loterias365<br />
+                    é <span id="typewriter" class="typewriter"></span>
+                    <span class="cursor">|</span>
+                  </h1>
+                  <p class="teste1 br-sm-off">
+                    A plataforma confiável para um jogo de loteria seguro.
+                  </p>
+                </div>
+
+                <!-- Container do lado direito -->
+                <div class="right-content">
+                  <img class="headerImage" src="/images/logo.png" alt="boxIcon">
+                  <div class="headerBox wow fadeTop">
+                    <div class="icon">
+                      <img class="headerIcon" src="/images/gambling.png" alt="boxIcon">
+                    </div>
+                    <a class="" href="#about" data-custom-scroll-to="about"><h3 class="boxTitle">Nossas Loterias</h3></a>
+                    <div class="headerBox4 wow fadeTop">
+                      <div class="icon">
+                        <img class="headerIcon" src="/images/laugh.png" alt="boxIcon">
+                      </div>
+                      <a class="" href="#offer" data-custom-scroll-to="offer"><h3 class="boxTitle">Resultados e Palpites</h3></a>
+                    </div>
+                  </div>
+                  <div class="headerBox2 wow fadeTop">
+                    <div class="icon">
+                      <img class="headerIcon" src="/images/reputation.png" alt="boxIcon">
+                    </div>
+                    <a class="" href="#advantages" data-custom-scroll-to="advantages"><h3 class="boxTitle">Por quê confiar</h3></a>
+                  </div>
+                  <div class="headerBox3 wow fadeTop">
+                    <div class="icon">
+                      <img class="headerIcon" src="/images/marketing.png" alt="boxIcon">
+                    </div>
+                    <a class="" href="#safeTransactions" data-custom-scroll-to="safeTransactions"><h3 class="boxTitle">O que oferecemos</h3></a>
+                  </div>
+                </div>
+        
+              </div>
+            
+            </div>
+            
+          </div>
+        </div>
+      </header>
+      <section class="bg10" id="about">
+        <a href="#about" data-custom-scroll-to="about"></a>
+        <div class="container">
+          <div class="container2">
+            <div class="info-container">
+              <h2 class="lotteryTitle txt-shadow">Nossas Loterias</h2>
+              <p class="aboutText">Participe de loterias como Mega-sena, Quina, Lotofácil e Mega da Virada!</p>
+              <p class="aboutText">Resultados em tempo real e dicas exclusivas em redes sociais e telegram!</p>
+            </div>
+            <div id="container3">
+              <div class="accordion">
+                <button class="accordion-header">
+                  <span>
+                    Por que confiar na loterias365?
+                  </span>
+                  <i class="fa-solid arrow fa-chevron-down"></i>
+                </button>
+
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum voluptas voluptatum in rerum architecto soluta repellendus! Doloribus tempore ab natus velit magnam veritatis aut ut illo dignissimos, eius corrupti!
+                  </p>
+                </div>
+              </div>
+              <div id="container3">
+                <div class="accordion">
+                  <button class="accordion-header">
+                    <span>
+                      Como jogar na Loterias365?
+                    </span>
+                    <i class="fa-solid arrow fa-chevron-down"></i>
+                  </button>
+  
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum voluptas voluptatum in rerum architecto soluta repellendus! Doloribus tempore ab natus velit magnam veritatis aut ut illo dignissimos, eius corrupti!
+                    </p>
+                  </div>
+                </div>
+                <div id="container3">
+                  <div class="accordion">
+                    <button class="accordion-header">
+                      <span>
+                        Preciso baixar algum app?
+                      </span>
+                      <i class="fa-solid arrow fa-chevron-down"></i>
+                    </button>
+    
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum voluptas voluptatum in rerum architecto soluta repellendus! Doloribus tempore ab natus velit magnam veritatis aut ut illo dignissimos, eius corrupti!
+                      </p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Counters-->
+      <section class="bg10 well2 text-center">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-sm-6 col-md-3">
+              <!-- Box counter-->
+              <article class="box-counter">
+                <div class="box-counter-main">
+                  <div class="counter offerBoxText">10</div>
+                </div>
+                <div class="box-counter-divider"></div>
+                <p class="box-counter-title offerBoxText">Available Lotteries</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <!-- Box counter-->
+              <article class="box-counter">
+                <div class="box-counter-main">
+                  <div class="counter offerBoxText">5</div>
+                </div>
+                <div class="box-counter-divider"></div>
+                <p class="box-counter-title offerBoxText">Years in Business</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <!-- Box counter-->
+              <article class="box-counter">
+                <div class="box-counter-main">
+                  <div class="counter offerBoxText">26</div>
+                </div>
+                <div class="box-counter-divider"></div>
+                <p class="box-counter-title offerBoxText">Lottery Experts</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <!-- Box counter-->
+              <article class="box-counter">
+                <div class="box-counter-main">
+                  <div class="counter offerBoxText">99</div><span class="small small_top offerBoxText">%</span>
+                </div>
+                <div class="box-counter-divider"></div>
+                <p class="box-counter-title offerBoxText">Satisfied Clients</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services-->
+      <!-- What We Offer-->
+      <section class="well1 center bg10" id="offer">
+        <h2 class="offerTitle">Experiência fácil de usar</h2>
+        <div class="separator2"></div>
+        <div class="offerBox">
+          <div class="row row-50 offerRow">
+            <!-- Texto principal à esquerda -->
+            <div class="col-lg-6 col-md-6 offerTextContent">
+              <h3 class="offerBoxTitle">Experiência <br> fácil de usar</h3>
+              <p class="offerBoxText">Acompanhe o resultado dos últimos jogos em nossa plataforma e receba palpites <br>
+                em nossos grupos e redes sociais! <br> Converse e interaja com outros usuários <br>  da
+                comunidade da Loterias365!</p>
+            </div>
+            
+            <!-- Imagem e caixas menores à direita -->
+            <div class="col-lg-6 col-md-6 offerMediaContent">
+              <img class="offerUser" src="images/laugh.png" alt="Experiência fácil de usar">
+              <div class="socialLinks">
+                <div class="headerBox6 wow fadeTop2">
+                  <div class="icon">
+                    <img class="headerIcon" src="/images/telegram.png" alt="Telegram">
+                  </div>
+                  <a href="https://t.me/+7M5il3Iq6GdhMDVh">
+                    <h3 class="boxTitle2">Telegram</h3>
+                  </a>
+                </div>
+      
+                <div class="headerBox5 wow fadeTop2">
+                  <div class="icon">
+                    <img class="headerIcon" src="/images/whatsapp.png" alt="Whatsapp">
+                  </div>
+                  <a href="https://wa.link/1gm4lr">
+                    <h3 class="boxTitle">Whatsapp</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="center bg10" id="safeTransactions">
+        <h2 class="offerTitle">Transações Seguras</h2>
+        <div class="separator2"></div>
+        <div class="offerBox2">
+          <div class="row row-50 offerRow">
+            <div class="col-lg-4 col-md-6 offerImageContainer">
+              <img class="offerUser wow fadeRight" src="images/money-transfer.png" alt="Transações Seguras">
+            </div>
+            <div class="col-lg-8 col-md-6 offerContent">
+              <h3 class="offerBoxTitle">Transações Seguras</h3>
+              <p class="offerBoxText">Somos confiáveis e possuímos uma plataforma <br> transparente e segura! Seus
+                dados estarão <br> protegidos e de acordo  com as políticas  de privacidade!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shopContainer bg9">
+        <div class="container1">
+          <div class="step">
+            <div class="step-content">
+              <h3 class="step-number">1.</h3>
+              <img class="transactionOptions" src="images/payment-method.png" alt="">
+            </div>
+            <div class="step-text">Adicione suas apostas<br>no carrinho</div>
+          </div>
+          
+          <div class="separator"></div>
+          
+          <div class="step">
+            <div class="step-content">
+              <div class="step-number">2.</div>
+              <img class="pixImage" src="images/pix-106.png" alt="pix">
+            </div>
+            <div class="step-text">Realize o pagamento <br> da maneira que preferir</div>
+          </div>
+          
+          <div class="separator"></div>
+          
+          <div class="step">
+            <div class="step-content">
+              <div class="step-number">3.</div>
+              <img class="transactionOptions" src="images/secure-payment.png" alt="">
+            </div>
+            <div class="step-text">O resto, fazemos por você!</div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="well2 center bg10" id="promotions">
+        <h2 class="offerTitle">Promoções</h2>  
+        <div class="separator3"></div>
+        <div class="offerBox2">
+          <div class="row row-50 offerRow">
+            <div class="col-lg-4 col-md-6 wow offer-content" data-wow-delay=".3s">
+              <div class="offer-text">
+                <h3 class="offerBoxTitle">Grandes Descontos</h3>
+                <p class="offerBoxText">Você ganha 20% de desconto em todos os seus jogos como Mega-sena, Quina, Lotofácil e Mega da Virada!!</p>
+              </div>
+              <img class="offerUser2 wow fadeLeft" src="images/shopping-online.png" alt="Grandes Descontos">
+            </div>
+          </div>
+        </div>
+        <section class="shopContainer bg9">
+          <div class="container1">
+            <div class="step">
+              <div class="step-content">
+                <img class="gamesIcon" src="images/megasena.png" alt="">
+              </div>
+              <div class="step-text">Mega-Sena</div>
+            </div>
+            
+            <div class="separator"></div>
+            
+            <div class="step">
+              <div class="step-content">
+                <img class="gamesIcon" src="images/lotofácil.png" alt="pix">
+              </div>
+              <div class="step-text">Lotofácil</div>
+            </div>
+            
+            <div class="separator"></div>
+            
+            <div class="step">
+              <div class="step-content">
+                <img class="gamesIcon" src="images/quina.png" alt="">
+              </div>
+              <div class="step-text">Quina</div>
+            </div>
+          </div>
+        </section>
+      </section>
+      
+      <section class="center well1 bg10" id="offer">
+        <h2 class="offerTitle">Jogo Responsável</h2>
+        <div class="separator2"></div>
+        <div class="offerBox2">
+          <div class="row row-50 offerRow">
+            <div class="col-lg-4 col-md-6 offerImageContainer">
+              <img class="offerUser wow fadeRight" src="images/transaction.png" alt="Jogo Responsável">
+            </div>
+            <div class="col-lg-8 col-md-6 offerContent">
+              <h3 class="offerBoxTitle">Transações Seguras</h3>
+              <p class="offerBoxText">Oferecemos recursos que ajudam <br> a jogar de forma consciente, <br> controlando seus
+                hábitos de aposta! <br> Mesmo que não esteja jogando, <br> nossa comunidade divide
+                palpites <br> e seus acertos dos últimos jogos! Aproveite!
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="center well1 bg10" id="betting">
+        <h2 class="offerTitle">Faça sua aposta agora</h2>
+        <div class="separator2"></div>
+        <div class="offerBox2">
+          <div class="row row-50 offerRow">
+            <div class="col-lg-4 col-md-6 wow offer-content" data-wow-delay=".3s">
+              <div class="offer-text">
+                <h3 class="offerBoxTitle">Escolha Seus Números e Aposte Agora!</h3>
+                <p class="offerBoxText">Selecione seus números no volante ao lado e aposte de forma segura.
+                  Quanto mais números você escolher, mais chances terá de ganhar</p>
+              </div>
+            </div>
+            <div class="promotionButton">
+              <button class="btn promotion-btn">Aposte agora <i class="fa-solid arrowLeft fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <!-- Services-->
+      <!-- <section class="well1 bg2 center bg2" id="services">
+        <div class="container">
+          <h2>Our Services</h2>
+          <ul class="row row-60 icon-list">
+            <li class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s"><span class="fa-image"></span>
+              <h3><a href="#">Lottery Results</a></h3>
+              <p>Get real-time lottery results for various national lotteries, directly on our platform.</p>
+            </li>
+            <li class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s"><span class="fa-calendar"></span>
+              <h3><a href="#">Exclusive Lottery Tips</a></h3>
+              <p>Access valuable tips and expert advice to enhance your chances of winning big in your favorite lotteries.</p>
+            </li>
+            <li class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s"><span class="fa-inbox"></span>
+              <h3><a href="#">Secure Betting</a></h3>
+              <p>We provide a secure and reliable platform for safe online lottery participation, ensuring your transactions are protected.</p>
+            </li>
+            <li class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s"><span class="fa-question-circle"></span>
+              <h3><a href="#">Responsible Gaming</a></h3>
+              <p>We promote responsible gaming by offering tools to help you manage your lottery participation and betting habits.</p>
+            </li>
+            <li class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s"><span class="fa-child"></span>
+              <h3><a href="#">Promotions & Bonuses</a></h3>
+              <p>Take advantage of regular promotions, bonuses, and special offers to make the most of your lottery experience.</p>
+            </li>
+            <li class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s"><span class="fa-area-chart"></span>
+              <h3><a href="#">Multiple Lotteries</a></h3>
+              <p>Choose from a wide range of lotteries, including popular games like Mega-Sena, Quina, and Lotofacil</p>
+            </li>
+            <li class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s"><span class="fa-cogs"></span>
+              <h3><a href="#">Customer Support</a></h3>
+              <p>Our dedicated support team is always available to assist you with any questions or issues regarding your account and betting.</p>
+            </li>
+            <li class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s"><span class="fa-info-circle"></span>
+              <h3><a href="#">Partnership Opportunities</a></h3>
+              <p>Collaborate with us and explore partnership opportunities to bring the excitement of lotteries to your audience.</p>
+            </li>
+          </ul>
+        </div>
+      </section> !-->
+
+      <footer class="">
+        <a class=""></a>
+        
+        <section class="bg-primary center">
+          <div class="container">
+            <div class="copyright-wrapper">
+              <p class="rights">
+                COPYRIGHT©<span class="copyright-year"></span>.
+                <span>&nbsp;<a target="_blank" href="https://www.loterias365.com/?r=615068/" title="www.Loterias365.com">Loterias365.com</a></span>
+              </p>
+            </div>
+          </div>
+          <div class="social-media-links">
+            <ul class="inline-list">
+              <li><a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=61559347252326">Facebook</a></li>
+              <li><a class="fa fa-twitter" href="#">Twitter</a></li>
+              <li><a class="fa fa-instagram" href="https://www.instagram.com/loterias365/">Instagram</a></li>
+            </ul>
+          </div>
+        </section>
+      </footer>
+      
+      
+    </div>
+    <!-- Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/collapse.js"></script>
+    <!-- coded by kraken-->
+  </body>
+</html>
