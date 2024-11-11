@@ -3883,7 +3883,6 @@ html .row-60 > *:before {
 }
 
 .bg10 {
-	background-image: url('/images/bg.png'); /* Define a imagem de fundo */
     background-size: cover; /* Garante que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
