@@ -3865,7 +3865,6 @@ html .row-60 > *:before {
 }
 
 .bg8 {
-	background-image: url("/LandingPage/images/testevv.png"); /* Define a imagem de fundo */
     background-size: cover; /* Garante que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -3875,7 +3874,6 @@ html .row-60 > *:before {
 }
 
 .bg9 {
-	background-image: url("/LandingPage/images/bg.png"); /* Define a imagem de fundo */
     background-size: cover; /* Garante que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
