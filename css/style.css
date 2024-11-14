@@ -10143,7 +10143,7 @@ html textarea.form-input {
 }
 
 .rd-navbar-static .rd-navbar-nav > li.active > a, .rd-navbar-static .rd-navbar-nav > li.focus > a, .rd-navbar-static .rd-navbar-nav > li.opened > a, .rd-navbar-fullwidth .rd-navbar-nav > li.active > a, .rd-navbar-fullwidth .rd-navbar-nav > li.focus > a, .rd-navbar-fullwidth .rd-navbar-nav > li.opened > a {
-	color: #42b773;
+	color: #55A630;
 	background: #116e58;
 }
 
@@ -10545,7 +10545,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	left: 0;
 	right: 0;
 	z-index: -1;
-	background: #fff;
+	background: #116e58;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -10565,7 +10565,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
-	background: #fff;
+	background: #007356;
 	color: #42b773;
 }
 
@@ -10586,8 +10586,8 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 }
 
 .rd-navbar-fixed .rd-navbar-nav li:hover > a, .rd-navbar-fixed .rd-navbar-nav li.active > a, .rd-navbar-fixed .rd-navbar-nav li.opened > a, .rd-navbar-fixed .rd-navbar-nav p:hover > a, .rd-navbar-fixed .rd-navbar-nav p.active > a, .rd-navbar-fixed .rd-navbar-nav p.opened > a {
-	color: #fff;
-	background: #42b773;
+	color: #FFFED5;
+	background: #007F5F;
 }
 
 .rd-navbar-fixed .rd-navbar-nav li:hover > .rd-navbar-submenu-toggle, .rd-navbar-fixed .rd-navbar-nav li.active > .rd-navbar-submenu-toggle, .rd-navbar-fixed .rd-navbar-nav li.opened > .rd-navbar-submenu-toggle, .rd-navbar-fixed .rd-navbar-nav p:hover > .rd-navbar-submenu-toggle, .rd-navbar-fixed .rd-navbar-nav p.active > .rd-navbar-submenu-toggle, .rd-navbar-fixed .rd-navbar-nav p.opened > .rd-navbar-submenu-toggle {
