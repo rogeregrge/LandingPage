@@ -1356,18 +1356,36 @@ Copyright (c) 2014 Daniel Eden
 
 @keyframes fadeLeft {
     from {
-		visibility: visible;
-        transform: translateX();
+        visibility: visible;
+        transform: translateX(0);
         opacity: 0;
     }
     to {
-        transform: translateX(-120px);
+        transform: translateX(100px);
         opacity: 1;
     }
 }
 
 .fadeLeft {
     animation: fadeLeft 1.5s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    @keyframes fadeLeftMobile {
+        from {
+            visibility: visible;
+            transform: translateX(15px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(-3px); /* 100px no mobile */
+            opacity: 1;
+        }
+    }
+
+    .fadeLeft {
+        animation: fadeLeftMobile 1.5s ease-out forwards;
+    }
 }
 
 @keyframes fadeRight {
@@ -3326,6 +3344,7 @@ em {
 
 .offerUser2 {
 	width: 150px;
+	transform: translateX(250px);
 }
 
 
@@ -6548,13 +6567,14 @@ html .page .group-top > *, html .page .group-top > *:first-child {
 }
 
 .box-counter-main .small {
-	font-size: 28px;
+	font-size: 10px;
 }
 
 .box-counter-main .small_top {
 	position: relative;
 	top: 20px;
 	vertical-align: top;
+	
 }
 
 .box-counter-divider {
@@ -10124,7 +10144,7 @@ html textarea.form-input {
 
 .rd-navbar-static .rd-navbar-nav > li.active > a, .rd-navbar-static .rd-navbar-nav > li.focus > a, .rd-navbar-static .rd-navbar-nav > li.opened > a, .rd-navbar-fullwidth .rd-navbar-nav > li.active > a, .rd-navbar-fullwidth .rd-navbar-nav > li.focus > a, .rd-navbar-fullwidth .rd-navbar-nav > li.opened > a {
 	color: #42b773;
-	background: #fff;
+	background: #116e58;
 }
 
 .rd-navbar-static .rd-navbar-nav > li.rd-navbar--has-dropdown,
@@ -11234,7 +11254,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   .offer-text {
 	flex: 2;
 	padding-right: 50px;
-	transform: translateX(	50px);
+	margin-left: 250px;
+	text-align: left;
   }
   
   .offerUser2 {
@@ -11273,7 +11294,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	display: flex;
 	flex-direction: column;
 	flex: 2;
-	transform: translateX(	-100px);
+	transform: translateX(-100px);
 }
 
 .headerBox {
@@ -12482,8 +12503,8 @@ background-color: #FFFED5;
   }
 
   .offerBoxText {
-    font-size: 14px; /* Adjust text size */
-    margin-bottom: 10px;
+    font-size: 0.9em; /* Adjust text size */
+    margin-top: 10px;
   }
 
   .person {
@@ -12502,6 +12523,107 @@ background-color: #FFFED5;
 
   .infoPerson {
     text-align: center;
+  }
+
+  #about .lotteryTitle{
+	font-size: 35px;
+  }
+
+  #about .aboutText{
+	font-size: 0.75em;
+  }
+
+  #about .accordion-text{
+	font-size: 1em;
+  }
+
+  #about .accordion-text2{
+	font-size: 1em;
+  }
+
+  #about .accordion-text3{
+	font-size: 1em;
+  }
+
+  #counter .box-counter-main {
+	font-size: 2em;
+  }
+
+  #counter .box-counter-title {
+	font-size: 0.8em;
+	line-height: 1.3;
+  }
+
+  #offer .offerRow{
+	padding-top: 250px;
+  }
+
+  #offer .offerBoxText{
+	text-align: center;
+	word-break: keep-all;
+	max-width: 100%; 
+  }
+  #offer .offerBoxText br {
+    display: none;
+  }
+
+  #offer .offerImageContainer{
+	transform: translateY(-100px);
+  }
+
+  #counter .container{
+	display: flex;
+	justify-content: center; /* Centraliza o conteúdo horizontalmente */
+	align-items: center; /* Centraliza o conteúdo verticalmente */
+  }
+
+  #safeTransactions .offerUser{
+	width: 50%;
+  }
+  #promotions .offerBox2{
+	transform: translateX(-110px);
+  }
+  #promotions .offerUser2 {
+	padding-bottom: 10px;
+  }
+  #betting .offer-content{
+	transform: translateX(-10px);
+  }
+  #betting .promotionButton{
+	transform: translateX(-180px);
+  }
+  #joinUs .ctaRow{
+	display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  #joinUs .ctaHeader{
+		margin-top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* Centraliza o conteúdo dentro da coluna */
+		text-align: center; /* Centraliza o texto */
+		flex-direction: column-reverse;
+  }
+
+  #joinUs .ctaText{
+	margin-top: 10px;
+	text-align: center;
+  }
+
+  #joinUs .promotion-btn3{
+	position: absolute;
+	text-align: center;
+	left: 20%;
+	top: 100%;
+	padding: 10px;
+	background-color: #55A630;
+	color: #FFFED5;
+	font-family: "Montserrat", sans-serif;
+	border-radius: 5px;
+	text-decoration: none;
   }
 }
   
