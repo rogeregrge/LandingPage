@@ -1361,7 +1361,7 @@ Copyright (c) 2014 Daniel Eden
         opacity: 0;
     }
     to {
-        transform: translateX(100px);
+        transform: translateX(150px);
         opacity: 1;
     }
 }
@@ -1395,7 +1395,7 @@ Copyright (c) 2014 Daniel Eden
         opacity: 0;
     }
     to {
-        transform: translateX(5px);
+        transform: translateX(-50px);
         opacity: 1;
     }
 }
@@ -1403,6 +1403,39 @@ Copyright (c) 2014 Daniel Eden
 .fadeRight {
     animation: fadeRight 1.5s ease-out forwards;
 }
+
+@keyframes fadeRight2 {
+    from {
+		visibility: visible;
+        transform: translateX();
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-5px);
+        opacity: 1;
+    }
+}
+
+.fadeRight2 {
+    animation: fadeRight2 1.5s ease-out forwards;
+}
+
+@keyframes fadeRight3 {
+    from {
+		visibility: visible;
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(30px);
+        opacity: 1;
+    }
+}
+
+.fadeRight3 {
+    animation: fadeRight3 1.5s ease-out forwards;
+}
+
 
 
 @-webkit-keyframes fadeInLeftBig {
@@ -3276,7 +3309,7 @@ strong,
 
 [class*='fa-']:before {
 	font-weight: 400;
-	font-family: "FontAwesome";
+	font-family: ""FontAwesome";"
 }
 
 .page {
@@ -3820,7 +3853,7 @@ html .row-60 > *:before {
 
 /*==================  Backgrounds  ======================*/
 .bg-primary {
-	background: #42b773;
+	background: #007F5F;
 }
 
 .bg1 {
@@ -4205,7 +4238,7 @@ a.active-form:hover {
 }
 
 .inline-list .fa:hover:before {
-	background: #a9dc56;
+	background: #007356;
 }
 
 .inline-list .fa:before {
@@ -4214,7 +4247,6 @@ a.active-form:hover {
 	-o-transition: 0.2s;
 	-webkit-transition: 0.2s;
 	transition: 0.2s;
-	color: #fff;
 	position: absolute;
 	left: -23px;
 	top: -17px;
@@ -4406,7 +4438,7 @@ main {
 =========================================================*/
 
 footer .rights {
-	color: #ffffff;
+	color: #FFFED5;
 	font-size: 11px;
 	font-weight: 400;
 }
@@ -11165,7 +11197,16 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	justify-content: center;
 }
 
-.offerBox {
+#promotions .offerBox{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    align-items: center;
+	padding: 0; /* Remove espaçamento interno */
+	margin: 0 auto;
+}
+
+#offer .offerBox {
 	display: flex;
 	gap: 20px;
 	padding: 100px;
@@ -11179,48 +11220,85 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-top: 200px;
 }
 
-.offerRow {
+#betting .offerBox2{
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-	padding-top: 100px;
+	padding-top: 200px;
 }
 
-.offerImageContainer {
+#betting .promotionImage{
+	left: 300px;
+}
+
+#offer .offerImageContainer {
 	flex: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 200px;
+	bottom: 50px;
+	right: 150px;
 }
+
+#safeTransactions .offerImageContainer {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 900px;
+	bottom: 100px;
+	left: 150px;
+}
+
+#safeTransactions .offerUser{
+	width: 500px;
+}
+
 
 .offerContent {
 	flex: 2;
 	padding-left: 100px;
+	left: 50px;
 }	
+
+#safeTransactions .offerContent{
+		flex: 2;
+		padding-left: 100px;
+		transform: translateX(-150px);
+}
   
   .offerUser {
 	max-width: 100%;
 	height: auto;
 	transform: translateX(150px);
 }
-
-#promotions .offerBox2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-  
-  .offerRow {
-	display: flex;
-	align-items: center;
-  }
   
   .offer-content {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	left: 300px;
+  }
+
+  .promotionImage{
+	width: 50%;
+	height: auto;
+  }
+
+  #betting .promotionImage{
+	width: 80%;
+  }
+
+  #betting .offer-content{
+	top: 100px;
+  }
+
+  .bettingImage{
+	right: 100px;
   }
 
   .ctaText{
@@ -11233,6 +11311,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
   .ctaImage {
 	max-width: 300px;
+	justify-content: center;
   }
 
   .ctaHeader {
@@ -11244,6 +11323,75 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	padding-top: 150px;
   }
 
+  .footer {
+	background-color: #007F5F;
+	color: #fff;
+	padding: 20px 0;
+  }
+  
+  .footer-container {
+	display: flex;
+	flex-wrap: wrap; /* Para dispositivos menores */
+	justify-content: space-between; /* Espaçamento igual entre colunas */
+	align-items: flex-start;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+
+  .links {
+	list-style: none; /* Remove marcadores da lista */
+	padding: 0;
+	margin: 0;
+  }
+  
+  .footer-column {
+	flex: 1;
+	min-width: 200px; /* Largura mínima para ajustar o layout em telas menores */
+	margin: 15px;
+  }
+
+  .footer-column2 {
+	flex: 1;
+	min-width: 200px; /* Largura mínima para ajustar o layout em telas menores */
+	margin: 15px;
+  }
+  
+  .inline-list,
+  .links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .inline-list li,
+  .links li {
+	margin-bottom: 5px;
+  }
+  
+  .inline-list li a,
+  .links li a {
+	text-decoration: none;
+	font-size: 14px;
+  }
+  
+  .inline-list li a:hover,
+  .links li a:hover {
+	text-decoration: underline;
+  }
+
+  	.phoneLink,
+	.emailLink {
+  text-decoration: none;
+  word-wrap: break-word; /* Quebra palavras longas */
+  font-size: 14px;
+}
+  
+  .rights {
+	font-size: 14px;
+	text-align: center;
+  }
+
   .ctaRow{
 	display: flex;
 	justify-content: center;
@@ -11253,15 +11401,12 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   
   .offer-text {
 	flex: 2;
-	padding-right: 50px;
-	margin-left: 250px;
 	text-align: left;
   }
   
   .offerUser2 {
 	flex: 1;
-	max-width: 100%;
-	height: auto;
+	max-width: 350px;
   }
 
 
@@ -11269,9 +11414,12 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	display: flex;
 	gap: 20px;
 	padding: 50px;
-	margin-top: 2%;	
 	align-items: center;
 	justify-content: center;
+}
+
+#safeTransactions .offerBox2{
+	padding-top: 100px;
 }
 
 .offerBox3 {
@@ -11286,15 +11434,22 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .offer-content {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	transform: translateX(120px);
+	text-align: center;
 }
 
 .offer-text {
 	display: flex;
 	flex-direction: column;
 	flex: 2;
-	transform: translateX(-100px);
+}
+
+.ctaTitle {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
 }
 
 .headerBox {
@@ -11466,6 +11621,24 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     justify-content: center;
 }
 
+#offer .offerTextContent{
+	left: 20px;
+}
+
+#promotions .offerTextContent{
+	flex: 1;
+	padding-right: 50px;
+	left: 340px;
+}
+
+#promotions .offerMediaContent{
+	right: 400px;
+	bottom: 100px;
+	width: 600px;
+	order: 1;
+	margin-bottom: 20px;
+}
+
 .offerBoxTitle3 {
     color: #FFFED5;
     font-family: "Montserrat", sans-serif;
@@ -11485,6 +11658,24 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	color: #FFFED5;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
+	word-wrap: break-word;
+	text-align: center;
+	line-height: 1.5;
+}
+
+#promotions .offerBoxText{
+	text-align: center; /* Centraliza o texto */
+	margin: 0 auto; /* Garante que o texto seja centralizado */
+	max-width: 50%;
+}
+
+#offer .offerBoxText{
+	text-align: center; /* Centraliza o texto */
+	margin: 0 auto; /* Garante que o texto seja centralizado */
+}
+
+#betting .offerBoxText{
+	max-width: 90%;
 }
 
 .offerBoxText2 {
@@ -11651,14 +11842,13 @@ text-decoration: none;
 .promotion-btn {
 position: absolute;
 text-align: center;
-left: 60%;
 padding: 10px 20px;
 background-color: #55A630;
 color: #FFFED5;
 font-family: "Montserrat", sans-serif;
 border-radius: 5px;
 text-decoration: none;
-transform: translate(-90px, 165px);
+transform: translateX(-20px);
 }
 
 .promotion-btn2 {
@@ -11677,7 +11867,7 @@ text-decoration: none;
 .promotion-btn3 {
 	position: absolute;
 	text-align: center;
-	left: 40%;
+	left: 30%;
 	top: 150%;
 	padding: 10px;
 	background-color: #55A630;
@@ -11691,6 +11881,8 @@ text-decoration: none;
 display:flex;
 align-items: center;
 justify-content: center;
+padding-top: 100px;
+left: 50px;
 }
 
 .register-btn:hover {
@@ -11776,10 +11968,19 @@ justify-content: center;
 align-items: center;
 }
 
-.offerRow {
+#safeTransactions .offerRow {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding-top: 100px;
+}
+
+#promotions .offerRow {
 display: flex;
-flex-direction: row;
+flex-direction: wrap;
 align-items: flex-start;
+padding-top: 200px;
+margin-bottom: 20px;
 }
 
 .offerTextContent {
@@ -11831,7 +12032,6 @@ height: 40px;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 20px;
 border-radius: 10px;
 max-width: 800px;
 }
@@ -11840,6 +12040,7 @@ max-width: 800px;
 display: flex;
 justify-content: center;
 align-items: center;
+padding-bottom: 100px;
 }
 
 .step {
@@ -11930,6 +12131,7 @@ background-color: #FFFED5;
 	align-items: flex-start; 
 	justify-content: space-between; 
 	overflow: hidden;
+	padding-top: 150px;
 }
 
 .lotteryTitle {
@@ -12018,6 +12220,12 @@ background-color: #FFFED5;
 	right: 10px;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram{
+	color: #FFFED5;
 }
 
 .arrowLeft {
@@ -12284,8 +12492,37 @@ background-color: #FFFED5;
 .offerTextContent {
 	order: 2; /* Garante que o texto venha depois da imagem */
 	text-align: center;
-	padding: 20px;
 	z-index: 1; /* Coloca o texto acima dos ícones, caso sobreponham */
+}
+
+#promotions .offerTextContent{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+	top: 10px;
+	left: 340px;
+}
+
+#promotions .offerMediaContent{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+	padding-top: 40px;
+	top: 20px;
+	transform: translateX(250px);
+}
+
+#promotions .promotionImage{
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+#betting .promotionImage{
+	width: 100%;
 }
 
 .offerMediaContent {
@@ -12331,7 +12568,7 @@ background-color: #FFFED5;
 	flex-direction: column;
 	align-self: flex-start;
 	position: relative;
-	top:-280px;
+	top:-180px;
 	right: 150px;
 	z-index: 2;
 	margin-top: 15px;
@@ -12375,6 +12612,7 @@ background-color: #FFFED5;
 }
 .offerUser{
 	width: 60%;
+	padding-top: 60px;
 }
 .offerContent {
 	display: flex;
@@ -12384,6 +12622,18 @@ background-color: #FFFED5;
 	text-align: center;      /* Alinha o texto ao centro */
 	right: 40px;           /* Garantir que o conteúdo ocupe toda a altura da tela */
 	bottom: 150px;
+}
+
+#safeTransactions .offerContent{
+	display: flex;
+	flex-direction: column;  
+	justify-content: center; 
+	align-items: center;     
+	text-align: center;      
+	right: 40px;           /* Garantir que o conteúdo ocupe toda a altura da tela */
+	bottom: 100px;
+	transform: translateX(-90px);
+	padding-left: 100px;
 }
 .offerBoxTitle, .offerBoxText {
 	margin: 0;               /* Remove margens extras */
@@ -12398,6 +12648,14 @@ background-color: #FFFED5;
 }
 .offerImageContainer {
 	margin-bottom: 20px; /* Ajuste opcional dependendo do espaçamento desejado */
+}
+#safeTransactions .offerImageContainer {
+	padding-top: 100px;
+	margin-bottom: 20px;
+	transform: translateX(-250px);
+	width: 900px;
+	bottom: 100px;
+	left: 250px;
 }
 .container1{
 	display: flex;
@@ -12422,17 +12680,24 @@ background-color: #FFFED5;
 	width: 35px;
 }
 .shopContainer {
-    margin-top: -250px; /* Ajuste a distância para cima conforme necessário */
+    margin-top: -150px; /* Ajuste a distância para cima conforme necessário */
 }
+
+.separator3{
+	margin-bottom: 10px;
+}
+
 .offer-content {
     display: flex;
     align-items: center;
     text-align: center;
-	flex-direction: column-reverse;
+	left: 200px;
   }
   
   .offer-text {
     margin-bottom: 20px; /* Ajuste o espaçamento entre o texto e a imagem */
+	text-align: center;
+	justify-content: center;
   }
   
   .offerBoxTitle{
@@ -12458,26 +12723,38 @@ background-color: #FFFED5;
     margin-bottom: 10px; /* Ajuste o espaçamento entre os passos */
   }
 
+
   .separator {
     display: none; /* Remove os separadores horizontais no mobile */
   }
-  .shopContainer{
-	margin-top: -400px;
-  }
- #offer .offerBox2 {
-    padding-bottom: 0; /* Remove o padding extra na parte inferior */
-    margin-bottom: 0;  /* Remove qualquer margem extra */
+
+  #offer .offerBox2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start; /* Alinha os elementos ao topo */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margem */
+	gap: 20px; /* Mantém espaçamento entre os elementos */
   }
   #offer .offerContent {
-    margin-bottom: 0; /* Remove margem inferior extra */
+    margin: 0; /* Remove margem inferior extra */
+	padding: 0;
+	padding-top: 550px;
+	width: 80%;
+  }
+  #safeTransactions .offerContent{
+	text-align: center;
+	bottom: 100px;
+	transform: translateX(-90px);
+	padding-left: 100px;
   }
   #offer .offerBoxText {
-    margin-bottom: 0; /* Alinha o tamanho da offerBox2 ao conteúdo */
-    padding-bottom: 20px; /* Ajuste conforme necessário para espaçamento mínimo */
+    margin-bottom: 0; /* Alinha o tamanho da offerBox2 ao conteúdo *//* Ajuste conforme necessário para espaçamento mínimo */
   }
   #betting .promotion-btn{
-	left: 160px;
+	left: 270px;
   }
+
   .testimonials-container {
     display: flex;
     justify-content: center;
@@ -12525,6 +12802,10 @@ background-color: #FFFED5;
     text-align: center;
   }
 
+  #about .container3{
+	transform: translateX(20px);
+  }
+
   #about .lotteryTitle{
 	font-size: 35px;
   }
@@ -12555,20 +12836,61 @@ background-color: #FFFED5;
   }
 
   #offer .offerRow{
-	padding-top: 250px;
+	display: flex;
+	align-items: flex-start;
+	margin: -50px;
+  }
+
+  #safeTransactions .offerRow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#betting .offerRow {
+    flex-direction: column; /* Coloca os elementos em uma coluna */
+  }
+
+  #betting .bettingImage {
+    order: -1; /* Faz a imagem aparecer antes do texto */
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+	width: 500px;
+	left: 50px;
+	bottom: 50px;
+  }
+
+  #betting .offer-content {
+    order: 1; /* Garante que o texto venha depois da imagem */
+	max-width: 80%;
+	bottom: 200px;
+  }
+
+#betting .offerRow{
+	display: flex;
+	flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+	align-items: center; /* Alinha os elementos verticalmente */
+	justify-content: center; /* Centraliza os elementos horizontalmente */
+
+}
+
+#promotions .offerBoxText{
+	padding-bottom: 0; /* Remove espaço extra na parte inferior */
+	line-height: 1.6; /* Ajuste opcional para controlar o espaçamento entre linhas */
   }
 
   #offer .offerBoxText{
 	text-align: center;
 	word-break: keep-all;
-	max-width: 100%; 
+	max-width: 100%;
   }
   #offer .offerBoxText br {
     display: none;
   }
 
   #offer .offerImageContainer{
-	transform: translateY(-100px);
+	top: 300px;
+	transform: translatex(300px);
   }
 
   #counter .container{
@@ -12587,16 +12909,21 @@ background-color: #FFFED5;
 	padding-bottom: 10px;
   }
   #betting .offer-content{
-	transform: translateX(-10px);
+	transform: translate(-200px, -100px);
   }
   #betting .promotionButton{
 	transform: translateX(-180px);
+  }
+  #joinUs .promotionButton{
+	left: 200px;
   }
   #joinUs .ctaRow{
 	display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     text-align: center; /* Centraliza o texto */
+	right: 20px;
+	bottom: 150px;
   }
 
   #joinUs .ctaHeader{
@@ -12606,18 +12933,19 @@ background-color: #FFFED5;
 		align-items: center; /* Centraliza o conteúdo dentro da coluna */
 		text-align: center; /* Centraliza o texto */
 		flex-direction: column-reverse;
+		left: 10px;
   }
 
   #joinUs .ctaText{
-	margin-top: 10px;
+	margin-top: 10%;
 	text-align: center;
   }
 
   #joinUs .promotion-btn3{
 	position: absolute;
 	text-align: center;
-	left: 20%;
-	top: 100%;
+	left: 25%;
+	top: 120%;
 	padding: 10px;
 	background-color: #55A630;
 	color: #FFFED5;
@@ -12625,5 +12953,34 @@ background-color: #FFFED5;
 	border-radius: 5px;
 	text-decoration: none;
   }
+
+  #offer .offerBox {
+	display: flex;
+	margin-top: 5%;
+	align-items: center;
+	justify-content: center;
+    align-items: center;
 }
+
+#promotions .offerBoxTitle{
+	transform: translateX(-320px);
+	margin: 0;
+}
+
+#promotions .offerBoxText{
+	transform: translateX(-320px);
+	margin: 0;
+}
+#offer .well2 {
+    padding-bottom: 0;
+  }
+  #promotions .offerRow {
+	display: flex;
+	flex-direction: wrap;
+	align-items: flex-start;
+	padding-top: 100px;
+	margin-bottom: 20px;
+}
+}
+
   
