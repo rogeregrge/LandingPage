@@ -11251,7 +11251,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	align-items: center;
 	width: 900px;
 	bottom: 100px;
-	left: 150px;
+	left: 200px;
 }
 
 #safeTransactions .offerUser{
@@ -11298,7 +11298,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   }
 
   .bettingImage{
-	right: 100px;
+	right: 150px;
   }
 
   .ctaText{
@@ -11347,13 +11347,25 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   
   .footer-column {
 	flex: 1;
-	min-width: 200px; /* Largura mínima para ajustar o layout em telas menores */
+	min-width: 200px;
 	margin: 15px;
   }
 
   .footer-column2 {
 	flex: 1;
-	min-width: 200px; /* Largura mínima para ajustar o layout em telas menores */
+	min-width: 200px;
+	margin: 15px;
+  }
+
+  .footer-column3 {
+	flex: 1;
+	min-width: 200px;
+	margin: 15px;
+  }
+
+  .footer-column4{
+	flex: 1;
+	min-width: 200px;
 	margin: 15px;
   }
   
@@ -11385,6 +11397,15 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   text-decoration: none;
   word-wrap: break-word; /* Quebra palavras longas */
   font-size: 14px;
+  color: #FFFED5 !important;
+}
+
+.phoneLink:hover,
+.phoneLink:visited,
+.phoneLink:focus,
+.phoneLink:active {
+  color: #FFFED5;
+  text-decoration: none;
 }
   
   .rights {
@@ -11570,6 +11591,16 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	font-weight: bold;
 }
 
+.boxTitle3{
+	line-height: 1.5;
+	color: #007356;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
 .boxTitle2 {
 	color: #007356;
 	font-family: "Montserrat", sans-serif;
@@ -11659,6 +11690,16 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	word-wrap: break-word;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.footerAbout {
+	color: #FFFED5;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	word-wrap: break-word;
+	word-break:keep-all;
 	text-align: center;
 	line-height: 1.5;
 }
@@ -11854,7 +11895,7 @@ transform: translateX(-20px);
 .promotion-btn2 {
 position: absolute;
 text-align: center;
-left: 40%;
+left: 38%;
 top: 120%;
 padding: 10px;
 background-color: #55A630;
@@ -12981,6 +13022,48 @@ background-color: #FFFED5;
 	padding-top: 100px;
 	margin-bottom: 20px;
 }
+
+@media (max-width: 768px) { /* Ajuste o breakpoint conforme necessário */
+	.footer-row {
+	  display: flex;
+	  flex-direction: row; /* Alinha os elementos em uma linha */
+	  justify-content: space-between; /* Espaçamento entre colunas */
+	  gap: 10px; /* Espaçamento entre os itens */
+	}
+  
+	.footer-column2,
+	.footer-column {
+	  flex: 1; /* Ajusta o tamanho de cada coluna */
+	  display: flex;
+	  flex-direction: column; /* Mantém os itens internos em coluna */
+	  align-items: flex-start; /* Alinha os itens ao início */
+	  text-align: left; /* Ajusta o alinhamento do texto */
+	}
+  
+	.footer-column ul,
+	.footer-column2 ul {
+	  padding: 0;
+	  margin: 0;
+	}
+  
+	.offerBoxText {
+	  font-size: 14px;
+	}
+
+	#counter .offerBoxText{
+		font-size: 0.85em;
+	}
+
+	.footer-column3{
+	flex: 1;
+	margin: 15px;
+	transform: translateX(-95px);
+	}
+	.footer-column4{
+		justify-content: center;
+	}
+  }
+  
 }
 
   
