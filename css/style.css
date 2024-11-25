@@ -11530,7 +11530,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	flex-direction: column;
 	align-self: flex-start;
 	position: relative;
-	top: -170px;
+	top: -500px;
 	right: -380px;
 	z-index: 2;
 	margin-top: 15px;
@@ -11797,7 +11797,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .headerImage {
 	width: 50%;
 	position: absolute;
-	transform: translateY(-100px);
+	transform: translateY(-30px);
 	z-index: 1;
 }
 
@@ -11896,7 +11896,7 @@ transform: translateX(-20px);
 position: absolute;
 text-align: center;
 left: 38%;
-top: 120%;
+top: 100%;
 padding: 10px;
 background-color: #55A630;
 color: #FFFED5;
@@ -12440,6 +12440,7 @@ background-color: #FFFED5;
 	.promotion-btn2 {
 	  text-align: center;
 	  width: 50%;
+	  top: 120%;
 	  margin: 20px -60px;
 	}
   }
@@ -12553,6 +12554,7 @@ background-color: #FFFED5;
     margin-bottom: 20px;
 	padding-top: 40px;
 	top: 20px;
+	width: 800px;
 	transform: translateX(400px);
 }
 
@@ -13061,6 +13063,20 @@ background-color: #FFFED5;
 		justify-content: center;
 	}
   }
+
+  @media screen and (width: 133px) and (height: 768px) {
+    #promotions .offerMediaContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 40px;
+        top: 20px;
+        transform: translateX(400px);
+    }
+}
+
   
 }
 
