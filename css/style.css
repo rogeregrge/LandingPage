@@ -13077,6 +13077,71 @@ background-color: #FFFED5;
     }
 }
 
+@media (max-width: 360px) {
+	#about .lotteryTitle {
+		font-size: 30px;
+	}
+	#about .aboutText{
+		font-size: 0.68em;
+	}
+	#counter .offerBoxText {
+		font-size: 0.9em;
+	}
+	#counter .box-counter{
+		width: 4.5em;
+	}
+	#counter .box-counter-divider::after{
+		width: 50px;
+	}
+	.headerBox5{
+		width: 110px;
+		height: 90px;
+		padding: 10px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		position: relative;
+		top: -40px;
+		right: 50px;
+		z-index: 2;
+		margin-top: 15px;
+		text-align: center;
+	}
+	#safeTransactions .offerBoxTitle{
+		font-size: 2em;
+	}
+	#safeTransactions .offerBoxText{
+		font-size: 0.9em;
+	}
+	#promotions .offerTextContent{
+		padding: 100px;
+		width: 100%;
+		box-sizing: border-box;
+		left: 330px;
+	}
+	#promotions .offerBoxTitle{
+		font-size: 2em;
+		text-align: center;
+	}
+	#promotions .offerBoxText{
+		font-size: 0.9em;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		text-align: justify;
+		line-height: 1.5;
+	}
+	#offer .offerImageContainer{
+		top: 300px;
+		transform: translatex(285px);
+	}
+	#offer .offerBoxText{
+		font-size: 1em;
+	}
+  }
+
   
 }
 
