@@ -13140,6 +13140,14 @@ background-color: #FFFED5;
 	#offer .offerBoxText{
 		font-size: 1em;
 	}
+	.footer-column3{
+		flex: 1;
+		margin: 15px;
+		transform: translateX(-125px);
+	}
+	#betting .offerBoxText{
+		transform: translateX(20px);	
+	}
   }
 
   
