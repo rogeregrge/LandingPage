@@ -3583,13 +3583,6 @@ em {
 		padding: 200px 0 250px;
 	}
 }
-
-@media (max-width: 767px) {
-	.jumbotron-custom {
-		padding: 50px 0 150px;
-	}
-}
-
 * + .btn {
 	margin-top: 25px;
 }
@@ -11601,6 +11594,16 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	font-weight: bold;
 }
 
+#home .boxtitle2{
+	line-height: 1.5;
+	color: #007356;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
 .boxTitle2 {
 	color: #007356;
 	font-family: "Montserrat", sans-serif;
@@ -12421,16 +12424,113 @@ background-color: #FFFED5;
   }
 
   @media (max-width: 768px) {
-	/* Hide the right content on mobile */
-	.right-content .headerBox,
-	.right-content .headerBox2,
-	.right-content .headerBox3,
-	.right-content .headerBox4,
-	.right-content .headerImage {
-	  display: none;
+
+	.jumbotron-custom{
+		padding-top: 0px !important;
 	}
-  
-	/* Center the left content and button on mobile */
+	
+	.left-content{
+		position: relative;
+		top: -150px;
+	}
+
+	.headerImage {
+		left: 0;
+		max-width: none;
+		width: 300px;
+		margin: 0 auto;
+		display: block;
+		transform: translate(45px, 150px);
+	  }
+
+	  .right-content {
+		flex-wrap: wrap; /* Garante que os elementos ajustem-se na largura */
+		justify-content: center;
+	  }
+
+	  .right-content {
+		display: flex;
+		flex-direction: column; /* Mantém os elementos empilhados */
+		align-items: center; /* Centraliza os elementos */
+	  }
+
+	  .right-content .headerBox,
+	  .right-content .headerBox2,
+	  .right-content .headerBox3,
+	  .right-content .headerBox4 {
+		display: inline-flex; /* Alinha os elementos em linha */
+		flex-direction: column;
+		margin: 0 10px; /* Espaçamento horizontal entre os elementos */
+	  }
+
+	  #home .headerBox{
+		position: relative;
+		top: 500px;
+		right: 270px;
+		width: 120px;
+		height: 95px;
+		padding: 10px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		z-index: 2;
+		margin-top: 15px;
+	  }
+
+	  .headerBox2{
+		position: relative;
+		width: 120px;
+		height: 95px;
+		padding: 2px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		top: 405px;
+		right: 175px;
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		z-index: 2;
+		margin-top: 15px;
+	  }
+
+	  .headerBox3{
+		position: relative;
+		width: 120px;
+		height: 94px;
+		top:311px;
+		right: 48px;
+		padding: 1px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		z-index: 2;
+	  }
+
+	  .headerBox4{
+		display: none;
+	  }
+	  
+	  #home .boxTitle2{
+		font-size: 15px;
+	  }
+
+	  #home .boxTitle3{
+		font-size: 13px;
+	  }
+
+	 #home .headerIcon {
+		width: 2.2em;
+	}
+
+
 	.left-content {
 	  text-align: center;
 	  width: 100%;
@@ -12440,9 +12540,17 @@ background-color: #FFFED5;
 	.promotion-btn2 {
 	  text-align: center;
 	  width: 50%;
-	  top: 120%;
-	  margin: 20px -60px;
+	  top: 110%;
+	  margin: 100px -50px;
 	}
+
+	.typewriter {
+		display: inline-block;
+		max-width: 240px; /* Ajuste conforme necessário */
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	  }
   }
 
   @media (max-width: 768px) {
@@ -12455,10 +12563,10 @@ background-color: #FFFED5;
 	}
   
 	.left-content .titleTypewriter {
-	  font-size: 40px; /* Define o tamanho da fonte do título para 50px */
-	  line-height: 1.2; /* Ajusta o espaçamento entre linhas para manter o título compacto */
+	  font-size: 38px; /* Define o tamanho da fonte do título para 50px */
+	  line-height: 1; /* Ajusta o espaçamento entre linhas para manter o título compacto */
 	  white-space: nowrap; /* Impede a quebra de linha */
-	  overflow: visible; /* Permite que o texto transborde da div */
+	  overflow: auto;
 	}
   
 	.left-content .teste1 {
@@ -12466,11 +12574,11 @@ background-color: #FFFED5;
 	}
   
 	.cursor {
-	  font-size: 38px; /* Ajusta o cursor para combinar com o novo tamanho do título */
+	  font-size: 30px; /* Ajusta o cursor para combinar com o novo tamanho do título */
 	}
 
 	#typewriter {
-		font-size: 40px; /* Ajuste o tamanho da fonte para evitar quebra de linha */
+		font-size: 33px; /* Ajuste o tamanho da fonte para evitar quebra de linha */
 		white-space: nowrap; /* Garante que o texto não quebre para uma nova linha */
 	}
   }
@@ -13157,8 +13265,12 @@ background-color: #FFFED5;
 		transform: translateX(20px);	
 	}
   }
-
   
+  @media screen and (width: 414px) and (height: 896px) {
+	#offer .headerBox6{
+		width: 300px;
+	}
+    }
 }
 
   
