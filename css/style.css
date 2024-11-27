@@ -3928,6 +3928,7 @@ html .row-60 > *:before {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+	background-image: url('/LandingPage/images/bg.png');
 }
 
 .bg11{
@@ -11211,13 +11212,19 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 #offer .offerBox {
 	display: flex;
-	gap: 20px;
+	flex-wrap: wrap;
+	gap: 40px;
 	padding: 100px;
 	margin-top: 5%;
 	align-items: center;
 	justify-content: center;
-    align-items: center;
 }
+
+#offer .offerBox {
+	padding-bottom: 0; /* Remove qualquer padding extra na parte inferior */
+	margin-bottom: 0; /* Evita espaço adicional indesejado */
+	height: auto; /* Permite que a altura da caixa seja determinada pelo conteúdo */
+  }
 
 #offer .offerBox2 {
 	display: flex;
@@ -12641,13 +12648,20 @@ background-color: #FFFED5;
 
 @media (max-width: 768px) {
 .bg8 {
-	background-image: url('/LandingPage/images/bgMobile.png') !important ;
+	background-image: url('/LandingPage/images/bgMobile.png') !important;
 	}
 .bg11 {
-	background-image: url('/LandingPage/images/bgMobile2.png') !important ;
+	background-image: url('/LandingPage/images/bgMobile2.png') !important;
 	}
+.bg10{
+	background-image: url('/LandingPage/images/bgMobile3.png') !important;
+}
 .well1.center.bg10 {
 	position: relative;
+}
+
+#offer .offerTextContent{
+	display: inline-block;
 }
 
 .offerRow {
@@ -12656,6 +12670,13 @@ background-color: #FFFED5;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+}
+
+#betting .offerBox2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 800px;
 }
 
 .offerTextContent {
@@ -12830,9 +12851,8 @@ background-color: #FFFED5;
 	justify-content: center; 
 	align-items: center;     
 	text-align: center;      
-	right: 40px;
+	right: 80px;
 	bottom: 100px;
-	transform: translateX(-90px);
 	padding-left: 100px;
 }
 .offerBoxTitle, .offerBoxText {
@@ -12852,7 +12872,7 @@ background-color: #FFFED5;
 #safeTransactions .offerImageContainer {
 	padding-top: 100px;
 	margin-bottom: 20px;
-	transform: translateX(-250px);
+	transform: translateX(-470px);
 	width: 900px;
 	bottom: 100px;
 	left: 250px;
@@ -12937,18 +12957,21 @@ background-color: #FFFED5;
   }
   #offer .offerContent {
     margin: 0;
+	position: relative;
+	bottom: 20px;
 	padding: 0;
 	padding-top: 550px;
+	height: 700px;
 	width: 80%;
   }
   #safeTransactions .offerContent{
 	text-align: center;
 	bottom: 100px;
-	transform: translateX(-90px);
+	transform: translateX(-330px);
 	padding-left: 100px;
   }
   #offer .offerBoxText {
-    margin-bottom: 0;
+	margin-bottom: 20px;
   }
   #betting .promotion-btn{
 	left: 270px;
@@ -13042,6 +13065,15 @@ background-color: #FFFED5;
 	display: flex;
 	align-items: flex-start;
 	margin: -50px;
+	height: 700px;
+  }
+
+  #safeTransactions .offerBox2 {
+	display: flex;
+	align-items: flex-start;
+	margin: -50px;
+	height: 700px;
+	width: 100%;
   }
 
   #safeTransactions .offerRow {
@@ -13060,7 +13092,7 @@ background-color: #FFFED5;
     margin-bottom: 20px;
 	width: 500px;
 	left: 50px;
-	bottom: 50px;
+	bottom: 10px;
   }
 
   #betting .offer-content {
@@ -13183,6 +13215,7 @@ background-color: #FFFED5;
 	align-items: flex-start;
 	padding-top: 100px;
 	margin-bottom: 20px;
+	height: 600px;
 }
 
 @media (max-width: 768px) {
@@ -13315,6 +13348,12 @@ background-color: #FFFED5;
 	}
 	#betting .offerBoxText{
 		transform: translateX(20px);	
+	}
+	#safeTransactions .offerContent{
+		text-align: center;
+		bottom: 100px;
+		transform: translateX(-350px);
+		padding-left: 100px;
 	}
   }
 }
