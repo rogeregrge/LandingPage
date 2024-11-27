@@ -3921,6 +3921,7 @@ html .row-60 > *:before {
     position: relative;
     width: 100%;
     max-height: 100vh;
+	background-image: url('/LandingPage/images/bg.png');
 }
 
 .bg10 {
@@ -11814,7 +11815,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	width: 30%;
 }
 
-.headerIconGambling{
+#home .headerIconGambling{
 	width: 40px;
 	height: 40px;
 }
@@ -13526,7 +13527,7 @@ background-color: #FFFED5;
 	#home .headerIcon {
 		width: 2em;
 	}
-	.headerIconGambling{
+#boxIcon .headerIconGambling{
 		width: 30%;
 		height: auto;
 		object-fit: contain;
