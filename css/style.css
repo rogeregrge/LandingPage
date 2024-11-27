@@ -3911,6 +3911,7 @@ html .row-60 > *:before {
     position: relative;
     width: 100%;
     height: 100vh;
+	background-image: url('/LandingPage/images/testelotofacil.png') !important;
 }
 
 .bg9 {
@@ -3929,6 +3930,15 @@ html .row-60 > *:before {
     position: relative;
 }
 
+.bg11{
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+	width: 100%;
+    height: 100vh;
+	background-image: url('/LandingPage/images/bg.png') !important;
+}	
 
 
 .bg2 {
@@ -11797,6 +11807,11 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	width: 30%;
 }
 
+.headerIconGambling{
+	width: 40px;
+	height: 40px;
+}
+
 .headerImage {
 	width: 50%;
 	position: absolute;
@@ -12440,7 +12455,7 @@ background-color: #FFFED5;
 		width: 300px;
 		margin: 0 auto;
 		display: block;
-		transform: translate(45px, 150px);
+		transform: translate(60px, 150px);
 	  }
 
 	  .right-content {
@@ -12466,7 +12481,7 @@ background-color: #FFFED5;
 	  #home .headerBox{
 		position: relative;
 		top: 500px;
-		right: 270px;
+		right: 260px;
 		width: 120px;
 		height: 95px;
 		padding: 10px;
@@ -12490,7 +12505,7 @@ background-color: #FFFED5;
 		border-radius: 8px;
 		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 		top: 405px;
-		right: 175px;
+		right: 165px;
 		display: flex;
 		flex-direction: column;
 		align-self: flex-end;
@@ -12503,7 +12518,7 @@ background-color: #FFFED5;
 		width: 120px;
 		height: 94px;
 		top:311px;
-		right: 48px;
+		right: 28px;
 		padding: 1px;
 		background-color: #FFFF;
 		border-radius: 8px;
@@ -12529,7 +12544,6 @@ background-color: #FFFED5;
 	 #home .headerIcon {
 		width: 2.2em;
 	}
-
 
 	.left-content {
 	  text-align: center;
@@ -12626,6 +12640,12 @@ background-color: #FFFED5;
 }
 
 @media (max-width: 768px) {
+.bg8 {
+	background-image: url('/LandingPage/images/bgMobile.png') !important ;
+	}
+.bg11 {
+	background-image: url('/LandingPage/images/bgMobile2.png') !important ;
+	}
 .well1.center.bg10 {
 	position: relative;
 }
@@ -12746,6 +12766,34 @@ background-color: #FFFED5;
 	width: 100%;
 	height: auto;
 	object-fit: contain;
+}
+
+#home .headerIconGambling{
+	width: 30%;
+	height: auto;
+	object-fit: contain;
+	position: relative;
+	bottom: 5px;	
+}
+
+#home .boxTitle {
+	color: #007356;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 1000;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+#home .boxTitle2{
+	color: #007356;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 1000;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.5em;
 }
 
 .offerBoxText {
@@ -13194,6 +13242,10 @@ background-color: #FFFED5;
 }
 
 @media (max-width: 360px) {
+
+	.bg8 {
+		background-image: url('/LandingPage/images/bgMobile.png');
+		}
 	#about .lotteryTitle {
 		font-size: 30px;
 	}
@@ -13265,12 +13317,181 @@ background-color: #FFFED5;
 		transform: translateX(20px);	
 	}
   }
-  
-  @media screen and (width: 414px) and (height: 896px) {
-	#offer .headerBox6{
-		width: 300px;
-	}
-    }
 }
+@media (max-width: 390px) {
+	.headerImage {
+		left: 0;
+		max-width: none;
+		width: 300px;
+		margin: 0 auto;
+		display: block;
+		transform: translate(45px, 150px);
+	}
+	#home .headerBox{
+		position: relative;
+		top: 500px;
+		right: 270px;
+		width: 120px;
+		height: 95px;
+		padding: 10px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		z-index: 2;
+		margin-top: 15px;
+	  }
 
-  
+	  .headerBox2{
+		position: relative;
+		width: 120px;
+		height: 95px;
+		padding: 2px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		top: 405px;
+		right: 175px;
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		z-index: 2;
+		margin-top: 15px;
+	  }
+
+	  .headerBox3{
+		position: relative;
+		width: 120px;
+		height: 94px;
+		top:311px;
+		right: 48px;
+		padding: 1px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		z-index: 2;
+	  }
+
+	  .headerBox4{
+		display: none;
+	  }
+	  #joinUs .promotion-btn3{
+		position: absolute;
+		text-align: center;
+		left: 25%;
+		top: 100%;
+		padding: 10px;
+		background-color: #55A630;
+		color: #FFFED5;
+		font-family: "Montserrat", sans-serif;
+		border-radius: 5px;
+		text-decoration: none;
+	  }
+  }
+  @media (max-width: 360px) and (max-height: 800px) {
+	#home .headerBox{
+		position: relative;
+		top: 460px;
+		right: 270px;
+		width: 100px;
+		height: 75px;
+		padding: 10px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		z-index: 2;
+		margin-top: 15px;
+	  }
+
+	  .headerBox2{
+		position: relative;
+		width: 100px;
+		height: 75px;
+		padding: 2px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		top: 385px;
+		right: 200px;
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		z-index: 2;
+		margin-top: 15px;
+	  }
+
+	  .headerBox3{
+		position: relative;
+		width: 100px;
+		height: 74px;
+		top:311px;
+		right: 75px;
+		padding: 1px;
+		background-color: #FFFF;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		z-index: 2;
+	  }
+
+	  .headerBox4{
+		display: none;
+	  }
+
+	  #home .boxTitle {
+		color: #007356;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 1000;
+		font-size: 11px;
+		text-align: center;
+		font-weight: bold;
+		line-height: 1.5em;
+	}
+
+	#home .boxTitle2 {
+		color: #007356;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 800;
+		font-size: 11px;
+		text-align: center;
+		font-weight: bold;
+		line-height: 1.5em;
+	}
+	.headerImage {
+		left: 0;
+		max-width: none;
+		width: 300px;
+		margin: 0 auto;
+		display: block;
+		transform: translate(20px, 150px);
+	}
+	.promotion-btn2 {
+		text-align: center;
+		width: 50%;
+		top: 100%;
+		margin: 100px -50px;
+	}
+
+	#home .headerIcon {
+		width: 2em;
+	}
+	.headerIconGambling{
+		width: 30%;
+		height: auto;
+		object-fit: contain;
+		position: relative;
+		bottom: 5px;
+	}
+}
