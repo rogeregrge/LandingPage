@@ -3988,6 +3988,10 @@ html .row-60 > *:before {
 	color: #fff;
 }
 
+.context-dark .boxTitle4 {
+	color: #007356 !important; /* Altera a cor para preto */
+  }
+
 /*==================    Buttons    ======================*/
 .btn {
 	display: flex;
@@ -12472,6 +12476,10 @@ background-color: #FFFED5;
 		position: relative;
 		top: -150px;
 	}
+
+	.context-dark .boxTitle4 {
+		color:  #007356 !important;
+	  }
 
 	.headerImage {
 		left: 0;
