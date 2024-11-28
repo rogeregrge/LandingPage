@@ -13278,7 +13278,7 @@ background-color: #FFFED5;
 @media (max-width: 360px) {
 
 	.bg8 {
-		background-image: url('/LandingPage/images/bgMobile.png');
+		background-image: url('../images/bgMobile.png');
 		}
 	#about .lotteryTitle {
 		font-size: 30px;
