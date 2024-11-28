@@ -3984,7 +3984,7 @@ html .row-60 > *:before {
 	background-size: cover;
 }
 
-.context-dark, .context-dark * {
+.context-dark {
 	color: #fff;
 }
 
