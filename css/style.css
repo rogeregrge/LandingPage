@@ -11600,6 +11600,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	font-size: 15px;
 	text-align: center;
 	font-weight: bold;
+	position: relative;
 }
 
 .boxTitle3{
@@ -11611,6 +11612,19 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	text-align: center;
 	font-weight: bold;
 }
+
+.boxTitle4{
+	line-height: 1.5;
+	color: #007356;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	top: 20px;
+}
+
 
 #home .boxtitle2{
 	line-height: 1.5;
@@ -13473,6 +13487,18 @@ background-color: #FFFED5;
 		align-self: flex-end;
 		z-index: 2;
 		margin-top: 15px;
+	  }
+
+	  #home .boxTitle4{
+		line-height: 1.5;
+		color: #007356;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 800;
+		font-size: 13px;
+		text-align: center;
+		font-weight: bold;
+		position: relative;
+		transform: translateY(-5px);
 	  }
 
 	  .headerBox3{
