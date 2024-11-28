@@ -12642,6 +12642,18 @@ background-color: #FFFED5;
 	  margin-bottom: 10px;
 	  box-sizing: border-box;
 	}
+
+	#home .boxTitle4{
+		line-height: 1.5;
+		color: #007356 !important; 
+		font-family: "Montserrat", sans-serif;
+		font-weight: 800;
+		font-size: 13px;
+		text-align: center;
+		font-weight: bold;
+		position: relative;
+		transform: translateY(-5px);
+	  }
   
 	.box-counter {
 	  margin: 0 auto;
