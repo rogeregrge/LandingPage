@@ -3911,7 +3911,7 @@ html .row-60 > *:before {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('/LandingPage/images/testelotofacil.png') no-repeat center center / cover;
+    background: url('LandingPage/images/testelotofacil.png') no-repeat center center / cover;
 }
 
 .bg9 {
@@ -12649,13 +12649,13 @@ background-color: #FFFED5;
 
 @media (max-width: 768px) {
 .bg8 {
-	background: url('/LandingPage/LandingPage/images/bgMobile.png') !important;
+	background: url('LandingPage/images/bgMobile.png') !important;
 	}
 .bg11 {
-	background: url('/LandingPage/LandingPage/images/bgMobile2.png') !important;
+	background: url('LandingPage/images/bgMobile2.png') !important;
 	}
 .bg10{
-	background: url('/LandingPage/LandingPage/images/bgMobile3.png') !important;
+	background: url('LandingPage/images/bgMobile3.png') !important;
 }
 .well1.center.bg10 {
 	position: relative;
