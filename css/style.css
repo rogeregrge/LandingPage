@@ -12649,7 +12649,7 @@ background-color: #FFFED5;
 
 @media (max-width: 768px) {
 .bg8 {
-	background: url('/LandingPage/css/images/bgMobile.png') !important;
+	background: url('../images/bgMobile.png') !important;
 	}
 .bg11 {
 	background: url('../images/bgMobile2.png') !important;
