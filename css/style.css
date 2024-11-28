@@ -3989,7 +3989,7 @@ html .row-60 > *:before {
 }
 
 .context-dark .boxTitle4 {
-	color: #007356 !important; /* Altera a cor para preto */
+	color: #007356 !important;
   }
 
 /*==================    Buttons    ======================*/
@@ -11617,7 +11617,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	font-weight: bold;
 }
 
-.boxTitle4{
+#home .boxTitle4{
 	line-height: 1.5;
 	color: #007356;
 	font-family: "Montserrat", sans-serif;
