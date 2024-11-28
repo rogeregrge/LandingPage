@@ -13491,7 +13491,7 @@ background-color: #FFFED5;
 
 	  #home .boxTitle4{
 		line-height: 1.5;
-		color: #007356;
+		color: #007356 !important; 
 		font-family: "Montserrat", sans-serif;
 		font-weight: 800;
 		font-size: 13px;
