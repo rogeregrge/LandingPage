@@ -12449,7 +12449,7 @@ background-color: #FFFED5;
   @media (max-width: 768px) {
 
 	.jumbotron-custom{
-		padding-top: 0px !important;
+		padding-top: 30px !important;
 	}
 	
 	.left-content{
