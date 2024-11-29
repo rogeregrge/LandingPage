@@ -12450,6 +12450,12 @@ background-color: #FFFED5;
 	text-align: center;
   }
 
+  @media (max-width: 390px){
+	#safeTransactions .offerContent{
+	transform: translateX(-400px);
+	}
+	}
+
   @media (max-width: 768px) {
 	.container2, #container3 {
 	  display: flex;
@@ -12461,7 +12467,7 @@ background-color: #FFFED5;
 	}
   
 	.accordion {
-	  width: 90%; /* Adjust width as necessary for your layout */
+	  width: 90%;
 	  margin: 10px 0;
 	}
   }
@@ -12835,7 +12841,7 @@ background-color: #FFFED5;
 	height: auto;
 	object-fit: contain;
 	position: relative;
-	bottom: 5px;	
+	bottom: 8px;	
 }
 
 #home .boxTitle {
@@ -12846,6 +12852,8 @@ background-color: #FFFED5;
 	text-align: center;
 	font-weight: bold;
 	line-height: 1.5em;
+	position: relative;
+	bottom: 10px;
 }
 
 #home .boxTitle2{
@@ -12882,7 +12890,7 @@ background-color: #FFFED5;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	right: 40px;
+	right: 20px;
 	bottom: 150px;
 }
 
@@ -13008,7 +13016,7 @@ background-color: #FFFED5;
   #safeTransactions .offerContent{
 	text-align: center;
 	bottom: 100px;
-	transform: translateX(-330px);
+	transform: translateX(-310px);
 	padding-left: 100px;
   }
   #offer .offerBoxText {
@@ -13079,11 +13087,11 @@ background-color: #FFFED5;
 	font-weight: 500;
 	text-align: center;
 	flex: 1;
-	max-width: 100%; /* Garante que o texto ocupe toda a largura disponível */
-	white-space: normal; /* Permite que o texto quebre em múltiplas linhas */
-	word-wrap: break-word; /* Garante que palavras muito grandes sejam quebradas */
-	padding: 0 10px; /* Adiciona espaçamento lateral para evitar que o texto encoste nas bordas */
-	margin: 0 auto; /* Centraliza o texto */
+	max-width: 100%;
+	white-space: normal;
+	word-wrap: break-word;
+	padding: 0 10px;
+	margin: 0 auto;
   }
 
   #about .accordion-text{
@@ -13336,7 +13344,6 @@ background-color: #FFFED5;
 		font-size: 0.68em;
 		position: relative;
 		left: 3px;
-
 	}
 	#counter .offerBoxText {
 		font-size: 0.9em;
@@ -13562,6 +13569,8 @@ background-color: #FFFED5;
 		text-align: center;
 		font-weight: bold;
 		line-height: 1.5em;
+		position: relative;
+		bottom: 10px;
 	}
 
 	#home .boxTitle2 {
@@ -13598,7 +13607,4 @@ background-color: #FFFED5;
 		position: relative;
 		bottom: 5px;
 	}
-	@media (min-width: 360px) and (max-width: 480px) {
-		/* Seus estilos aqui */
-	  }
 }
