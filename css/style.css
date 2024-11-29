@@ -12697,6 +12697,10 @@ background-color: #FFFED5;
 	position: relative;
 }
 
+#betting .offerBoxText{
+	transform: translateX(20px);	
+}
+
 #offer .offerTextContent{
 	display: inline-block;
 }
@@ -12814,7 +12818,7 @@ background-color: #FFFED5;
 	align-self: flex-start;
 	position: relative;
 	top: -40px;
-	right: 30px;
+	right: 50px;
 	z-index: 2;
 	margin-top: 15px;
 	text-align: center;
@@ -13070,7 +13074,16 @@ background-color: #FFFED5;
   }
 
   #about .aboutText{
-	font-size: 0.75em;
+	color: #FFFED5;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-align: center;
+	flex: 1;
+	max-width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+	white-space: normal; /* Permite que o texto quebre em múltiplas linhas */
+	word-wrap: break-word; /* Garante que palavras muito grandes sejam quebradas */
+	padding: 0 10px; /* Adiciona espaçamento lateral para evitar que o texto encoste nas bordas */
+	margin: 0 auto; /* Centraliza o texto */
   }
 
   #about .accordion-text{
