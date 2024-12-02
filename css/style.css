@@ -102,12 +102,6 @@ input[type='number'] {
 	-moz-box-sizing: border-box;
 }
 
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2014 Daniel Eden
-*/
 .animated {
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
@@ -5439,11 +5433,6 @@ html .page .group-top > *, html .page .group-top > *:first-child {
 	}
 }
 
-/*
-*
-* Snackbars
-* --------------------------------------------------
-*/
 .snackbars {
 	max-width: 280px;
 	padding: 9px 16px;
@@ -5492,7 +5481,6 @@ html .page .group-top > *, html .page .group-top > *:first-child {
 	}
 }
 
-/*==================   Thumbnail    ======================*/
 .thumb {
 	display: block;
 	position: relative;
@@ -5605,11 +5593,6 @@ html .page .group-top > *, html .page .group-top > *:first-child {
 	color: #42b773;
 }
 
-/*
-*
-* Video
-* --------------------------------------------------
-*/
 .video-cover {
 	position: relative;
 	display: flex;
@@ -5676,9 +5659,6 @@ html .page .group-top > *, html .page .group-top > *:first-child {
 	border: 0;
 }
 
-/*
-/ One screen page
-*/
 .one-screen-page {
 	text-align: center;
 	display: flex;
@@ -6573,14 +6553,6 @@ html .page .group-top > *, html .page .group-top > *:first-child {
 	}
 }
 
-/*
-*
-* Counter
-* --------------------------------------------------
-*/
-/**
-* Box Counter
-*/
 .box-counter {
 	position: relative;
 	text-align: center;
@@ -6675,11 +6647,6 @@ html .page .group-top > *, html .page .group-top > *:first-child {
 	background: #fff;
 }
 
-/*
-* @subsection Google Map
-* @description Describes style declarations for RD Google Map extension
-* @version     1.0.0
-*/
 .map {
 	position: relative;
 }
@@ -6722,11 +6689,6 @@ html .page .group-top > *, html .page .group-top > *:first-child {
 	font-size: 13px;
 }
 
-/*
-*
-* Isotope
-* --------------------------------------------------
-*/
 @keyframes sprite-animation {
 	from {
 		background-position: 0 0;
@@ -7926,9 +7888,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
 }
 
-/*
-* Lightgallery transitions
-*/
 .lg-css3.lg-zoom-in .lg-item {
 	opacity: 0;
 }
@@ -8973,9 +8932,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
 }
 
-/*
-* @subsection   Magnific Popup
-*/
 .mfp-bg {
 	top: 0;
 	left: 0;
@@ -9292,7 +9248,7 @@ button::-moz-focus-inner {
 	background: #000;
 }
 
-/* Main image in popup */
+
 img.mfp-img {
 	width: auto;
 	max-width: 100%;
@@ -9306,7 +9262,7 @@ img.mfp-img {
 	margin: 0 auto;
 }
 
-/* The shadow behind the image */
+
 .mfp-figure {
 	line-height: 0;
 }
@@ -9363,9 +9319,6 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-	/**
-       * Remove all paddings around the image on small screen
-       */
 	.mfp-img-mobile .mfp-image-holder {
 		padding-left: 0;
 		padding-right: 0;
@@ -9457,11 +9410,6 @@ img.mfp-img {
 	padding-top: 0;
 }
 
-/*
-*
-* Form styles
-* --------------------------------------------------
-*/
 .rd-mailform {
 	position: relative;
 	text-align: left;
@@ -10898,10 +10846,6 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	color: #fff;
 }
 
-/**
- *	This element is created inside your target element
- *	It is used so that your own element will not need to be altered
- **/
 .time_circles {
 	position: relative;
 	width: 100%;
@@ -10924,10 +10868,6 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	}
 }
 
-/**
- *	This is all the elements used to house all text used
- * in time circles
- **/
 .time_circles > div {
 	position: absolute;
 	top: 0 !important;
@@ -10946,9 +10886,6 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	}
 }
 
-/**
- *	Titles (Days, Hours, etc)
- **/
 .time_circles > div > h4 {
 	position: absolute;
 	left: 0;
@@ -10967,9 +10904,6 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	color: #fff;
 }
 
-/**
- *	Time numbers, ie: 12
- **/
 .time_circles > div > span {
 	display: block;
 	text-align: center;
@@ -10994,11 +10928,6 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	color: #fff;
 }
 
-/*
-* @subsection   ToTop
-* @license      MIT license - http://opensource.org/licenses/MIT
-* @version      1.0.0
-*/
 html .ui-to-top {
 	width: 50px;
 	height: 50px;
@@ -11211,7 +11140,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	align-items: center;
 	justify-content: center;
     align-items: center;
-	padding: 0; /* Remove espaçamento interno */
+	padding: 0;
 	margin: 0 auto;
 }
 
@@ -11226,9 +11155,9 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 #offer .offerBox {
-	padding-bottom: 0; /* Remove qualquer padding extra na parte inferior */
-	margin-bottom: 0; /* Evita espaço adicional indesejado */
-	height: auto; /* Permite que a altura da caixa seja determinada pelo conteúdo */
+	padding-bottom: 0;
+	margin-bottom: 0;
+	height: auto;
   }
 
 #offer .offerBox2 {
@@ -11346,8 +11275,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   
   .footer-container {
 	display: flex;
-	flex-wrap: wrap; /* Para dispositivos menores */
-	justify-content: space-between; /* Espaçamento igual entre colunas */
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: flex-start;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -11355,7 +11284,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   }
 
   .links {
-	list-style: none; /* Remove marcadores da lista */
+	list-style: none;
 	padding: 0;
 	margin: 0;
   }
@@ -11410,7 +11339,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   	.phoneLink,
 	.emailLink {
   text-decoration: none;
-  word-wrap: break-word; /* Quebra palavras longas */
+  word-wrap: break-word;
   font-size: 14px;
   color: #FFFED5 !important;
 }
@@ -11744,14 +11673,14 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 #promotions .offerBoxText{
-	text-align: center; /* Centraliza o texto */
-	margin: 0 auto; /* Garante que o texto seja centralizado */
+	text-align: center;
+	margin: 0 auto;
 	max-width: 50%;
 }
 
 #offer .offerBoxText{
-	text-align: center; /* Centraliza o texto */
-	margin: 0 auto; /* Garante que o texto seja centralizado */
+	text-align: center;
+	margin: 0 auto;
 }
 
 #betting .offerBoxText{
@@ -12497,23 +12426,23 @@ background-color: #FFFED5;
 	  }
 
 	  .right-content {
-		flex-wrap: wrap; /* Garante que os elementos ajustem-se na largura */
+		flex-wrap: wrap;
 		justify-content: center;
 	  }
 
 	  .right-content {
 		display: flex;
-		flex-direction: column; /* Mantém os elementos empilhados */
-		align-items: center; /* Centraliza os elementos */
+		flex-direction: column;
+		align-items: center
 	  }
 
 	  .right-content .headerBox,
 	  .right-content .headerBox2,
 	  .right-content .headerBox3,
 	  .right-content .headerBox4 {
-		display: inline-flex; /* Alinha os elementos em linha */
+		display: inline-flex;
 		flex-direction: column;
-		margin: 0 10px; /* Espaçamento horizontal entre os elementos */
+		margin: 0 10px;
 	  }
 
 	  #home .headerBox{
@@ -12598,7 +12527,7 @@ background-color: #FFFED5;
 
 	.typewriter {
 		display: inline-block;
-		max-width: 240px; /* Ajuste conforme necessário */
+		max-width: 240px;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -12606,48 +12535,47 @@ background-color: #FFFED5;
   }
 
   @media (max-width: 768px) {
-	/* Ajuste do conteúdo da esquerda no mobile */
 	.left-content {
 	  width: 100%;
-	  padding: 0 0; /* Adiciona um padding para evitar que o texto encoste nas bordas */
+	  padding: 0 0;
 	  text-align: center;
 	  padding-top: 50px;
 	}
   
 	.left-content .titleTypewriter {
-	  font-size: 38px; /* Define o tamanho da fonte do título para 50px */
-	  line-height: 1; /* Ajusta o espaçamento entre linhas para manter o título compacto */
-	  white-space: nowrap; /* Impede a quebra de linha */
+	  font-size: 38px;
+	  line-height: 1;
+	  white-space: nowrap;
 	  overflow: auto;
 	}
   
 	.left-content .teste1 {
-	  font-size: 16px; /* Ajusta o tamanho da fonte do parágrafo para melhor leitura no mobile */
+	  font-size: 16px;
 	}
   
 	.cursor {
-	  font-size: 30px; /* Ajusta o cursor para combinar com o novo tamanho do título */
+	  font-size: 30px;
 	}
 
 	#typewriter {
-		font-size: 33px; /* Ajuste o tamanho da fonte para evitar quebra de linha */
-		white-space: nowrap; /* Garante que o texto não quebre para uma nova linha */
+		font-size: 33px;
+		white-space: nowrap;
 	}
   }
   
   @media (max-width: 768px) {
     .bg8 {
-        height: 100% /* Define a altura para 500px na versão mobile */
+        height: 100%
     }
 	.bg10 {
-		height: 50% /* Define a altura para 500px na versão mobile */
+		height: 50%
 	}
 }
 
 @media (max-width: 768px) {
 	.bg10 .container .row {
 	  display: flex;
-	  flex-wrap: nowrap; /* Não permite quebra de linha */
+	  flex-wrap: nowrap;
 	  justify-content: space-between;
 	}
   
@@ -13016,7 +12944,7 @@ background-color: #FFFED5;
   #safeTransactions .offerContent{
 	text-align: center;
 	bottom: 100px;
-	transform: translateX(-310px);
+	transform: translateX(-330px);
 	padding-left: 100px;
   }
   #offer .offerBoxText {
